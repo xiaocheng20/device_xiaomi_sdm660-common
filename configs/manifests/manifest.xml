@@ -227,6 +227,10 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
            <name>IRadioConfig</name>
            <instance>default</instance>
        </interface>
+       <interface>
+            <name>ISensorManager</name>
+            <instance>default</instance>
+        </interface>
     </hal>
     <!-- RIL UIM REMOTE CLIENT -->
     <hal format="hidl">
@@ -408,6 +412,15 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                <instance>oemhook0</instance>
                <instance>oemhook1</instance>
            </interface>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.usb</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IUsb</name>
+            <instance>default</instance>
+        </interface>
     </hal>
     <!-- Alarm HAL service -->
     <hal format="hidl">
